@@ -18,3 +18,20 @@
    2. 链式存储
    3. 索引存储
    4. 散列存储
+### 抽象数据类型（Abstract Data Type，ADT）
+> 定义：一个数学模型及定义在该模型上的一组操作。
+
+```JavaScript{.line-numbers}
+ADT 抽象数据类名
+Data
+   数据元素之间逻辑关系的定义
+Operation
+   操作1
+      初始条件
+      操作结果描述
+   操作2
+   ...
+   操作n
+   ...
+endADT
+```
