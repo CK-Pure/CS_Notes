@@ -1,23 +1,17 @@
 public class HillSort {
     public static void hillSort(int[] arr) {
         int length = arr.length;
-        //区间
-        int gap = 1;
-        while (gap < length) {
-            gap = gap * 3 + 1;
-        }
-        while (gap > 0) {
-            for (int i = gap; i < length; i++) {
-                int tmp = arr[i];
-                int j = i - gap;
-                //跨区间排序
-                while (j >= 0 && arr[j] > tmp) {
-                    arr[j + gap] = arr[j];
-                    j -= gap;
+        int temp;
+        for (int step = length / 2; step >= 1; step /= 2) {
+            for (int i = step; i < length; i++) {
+                temp = arr[i];
+                int j = i - step;
+                while (j >= 0 && arr[j] > temp) {
+                    arr[j + step] = arr[j];
+                    j -= step;
                 }
-                arr[j + gap] = tmp;
+                arr[j + step] = temp;
             }
-            gap = gap / 3;
         }
     }
     public static void main(String[] args) {
