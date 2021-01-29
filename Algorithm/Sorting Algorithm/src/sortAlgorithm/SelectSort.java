@@ -1,3 +1,5 @@
+package sortAlgorithm;
+
 public class SelectSort {
     public static void selectSort(int[] arr){
         //O(n²)

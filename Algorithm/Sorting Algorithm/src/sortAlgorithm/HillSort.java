@@ -1,3 +1,5 @@
+package sortAlgorithm;
+
 public class HillSort {
     public static void hillSort(int[] arr) {
         int length = arr.length;

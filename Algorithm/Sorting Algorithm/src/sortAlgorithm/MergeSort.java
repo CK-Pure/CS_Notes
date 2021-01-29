@@ -1,3 +1,5 @@
+package sortAlgorithm;
+
 public class MergeSort {
     public static void mergeSort(int[] arr) {
         int[] tempArr = new int[arr.length];
